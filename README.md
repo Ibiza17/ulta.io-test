@@ -107,32 +107,21 @@
 
 1) Save the code as a .js file in the cypress/integration directory of your Cypress project.
 2) Create two JSON files named loginData.json and checkoutData.json in the cypress/fixtures directory of your Cypress project.
-3) In the loginData.json file, add the following JSON code with your own username and password:
-{
-    "username": "your-username",
-    "password": "your-password"
-}
-4) In the checkoutData.json file, add the following JSON code with your own details:
-{
-    "firstName": "your-first-name",
-    "lastName": "your-last-name",
-    "postalCode": "your-postal-code"
-}
-5) Open your Cypress Test Runner by running npm run cy:open in your terminal or by clicking the Cypress icon in your project's toolbar.
-6) Click on the example_spec.js file to run the test.
-7) The Cypress Test Runner will open a browser window and navigate to the Sauce Demo website.
-8) The test will then log in using the username and password provided in loginData.json.
-9) An item will be added to the cart, and the test will verify that the item was added to the cart.
-10) The test will then proceed to the checkout process, filling in the details provided in checkoutData.json.
-11) The checkout process will be completed, and the test will verify that the order was successful.
-12) Finally, the test will navigate back to the home page.
+3) Open your Cypress Test Runner by running npm run cy:open in your terminal or by clicking the Cypress icon in your project's toolbar.
+4) Click on the purchase-flow.js file to run the test.
+5) The Cypress Test Runner will open a browser window and navigate to the Sauce Demo website.
+6) The test will then log in using the username and password provided in loginData.json.
+7) An item will be added to the cart, and the test will verify that the item was added to the cart.
+8) The test will then proceed to the checkout process, filling in the details provided in checkoutData.json.
+9) The checkout process will be completed, and the test will verify that the order was successful.
+10) Finally, the test will navigate back to the home page.
 
 This Cypress code will automate the process of logging in to the Sauce Demo website, adding an item to the cart, checking out, and verifying that the order was successful. The test uses cy.get to select elements on the page and cy.type and cy.click to interact with those elements. It also uses cy.url and cy.contains to verify that the correct pages and elements are displayed at each step of the process.
 
-## As for the improvements, here are a few suggestions:
+## I would improve:
 
-1) To make the test more readable and reusable, consider extracting commonly used test steps into custom commands, e.g., logging in, adding an item to the cart, checking out, etc.
-2) The current test only validates a single product added to the cart, consider adding additional tests for adding multiple products, removing items from the cart, updating the quantity, etc.
+1) To make the test more readable and reusable, i would consider extracting commonly used test steps into custom commands, e.g., logging in, adding an item to the cart, checking out, etc.
+2) The current test only validates a single product added to the cart, i would consider adding additional tests for adding multiple products, removing items from the cart, updating the quantity, etc.
 3) The test only covers a happy path scenario. It is important to include negative testing scenarios such as entering invalid login credentials or incorrect information during checkout to ensure the application handles them appropriately.
 
-4. Consider using fixtures for reusable data, such as login credentials and checkout information, to keep the test code clean and easy to read.
+4. I would consider using fixtures for reusable data, such as login credentials and checkout information, to keep the test code clean and easy to read.
