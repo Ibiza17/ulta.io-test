@@ -103,7 +103,7 @@
 ### Actual result:
 1) The products page redirected successfully
 
-##Execution instructions
+## Execution instructions
 
 1) Save the code as a .js file in the cypress/integration directory of your Cypress project.
 2) Create two JSON files named loginData.json and checkoutData.json in the cypress/fixtures directory of your Cypress project.
