@@ -91,7 +91,7 @@
 
 1) The purchase process successfully passed and we redirected to the homa page after the purchase.
 
-Test Case 6: Go back to home page after successful purchase
+### Test Case 6: Go back to home page after successful purchase
 
 ### Steps:
 
