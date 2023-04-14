@@ -128,3 +128,10 @@
 12) Finally, the test will navigate back to the home page.
 
 This Cypress code will automate the process of logging in to the Sauce Demo website, adding an item to the cart, checking out, and verifying that the order was successful. The test uses cy.get to select elements on the page and cy.type and cy.click to interact with those elements. It also uses cy.url and cy.contains to verify that the correct pages and elements are displayed at each step of the process.
+
+## As for the improvements, here are a few suggestions:
+
+1) To make the test more readable and reusable, consider extracting commonly used test steps into custom commands, e.g., logging in, adding an item to the cart, checking out, etc.
+2) The current test only validates a single product added to the cart, consider adding additional tests for adding multiple products, removing items from the cart, updating the quantity, etc.
+3) The test only covers a happy path scenario. It is important to include negative testing scenarios such as entering invalid login credentials or incorrect information during checkout to ensure the application handles them appropriately.
+4)Consider using fixtures for reusable data, such as login credentials and checkout information, to keep the test code clean and easy to read.
