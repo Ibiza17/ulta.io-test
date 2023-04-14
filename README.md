@@ -102,4 +102,3 @@ Test Case 6: Go back to home page after successful purchase
 
 ###Actual result:
 1) The products page redirected successfully
-
