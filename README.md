@@ -1,5 +1,19 @@
 ## Manual test cases for 'https://www.saucedemo.com/'
 
+## Execution instructions
+
+1) Download the code
+2) Open your Cypress Test Runner by running npm run cy:open in your terminal or by clicking the Cypress icon in your project's toolbar.
+3) Click on the purchase-flow.js file to run the test.
+4) The Cypress Test Runner will open a browser window and navigate to the Sauce Demo website.
+5) The test will then log in using the username and password provided in loginData.json.
+6) An item will be added to the cart, and the test will verify that the item was added to the cart.
+7) The test will then proceed to the checkout process, filling in the details provided in checkoutData.json.
+8) The checkout process will be completed, and the test will verify that the order was successful.
+9) Finally, the test will navigate back to the home page.
+
+This Cypress code will automate the process of logging in to the Sauce Demo website, adding an item to the cart, checking out, and verifying that the order was successful. The test uses cy.get to select elements on the page and cy.type and cy.click to interact with those elements. It also uses cy.url and cy.contains to verify that the correct pages and elements are displayed at each step of the process.
+
 ### Test Case 1: Verify successful login with valid credentials
 
 ### Steps:
@@ -102,20 +116,6 @@
 
 ### Actual result:
 1) The products page redirected successfully
-
-## Execution instructions
-
-1) Save the code as a .js file in the cypress/integration directory of your Cypress project.
-2) Open your Cypress Test Runner by running npm run cy:open in your terminal or by clicking the Cypress icon in your project's toolbar.
-3) Click on the purchase-flow.js file to run the test.
-4) The Cypress Test Runner will open a browser window and navigate to the Sauce Demo website.
-5) The test will then log in using the username and password provided in loginData.json.
-6) An item will be added to the cart, and the test will verify that the item was added to the cart.
-7) The test will then proceed to the checkout process, filling in the details provided in checkoutData.json.
-8) The checkout process will be completed, and the test will verify that the order was successful.
-9) Finally, the test will navigate back to the home page.
-
-This Cypress code will automate the process of logging in to the Sauce Demo website, adding an item to the cart, checking out, and verifying that the order was successful. The test uses cy.get to select elements on the page and cy.type and cy.click to interact with those elements. It also uses cy.url and cy.contains to verify that the correct pages and elements are displayed at each step of the process.
 
 ## I would improve:
 
