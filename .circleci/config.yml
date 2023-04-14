@@ -8,16 +8,7 @@ jobs:
       - checkout
       - run: npm install
       - run: npx cypress run --headless --browser chrome --config baseUrl=https://www.saucedemo.com
-
-workflows:
-  build-and-test:
-    jobs:
-      - cypress-run
-
-
-version: 2
-jobs:
-build:
+  build:
   working_directory: /tmp
   steps:
     - run:
@@ -33,3 +24,9 @@ build:
 
     - store_artifacts:
         path: /tmp/artifacts
+
+workflows:
+  build-and-test:
+    jobs:
+      - cypress-run
+
