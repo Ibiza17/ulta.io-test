@@ -1,21 +1,16 @@
 version: 2.1
 
-orbs:
-  cypress: cypress-io/cypress@1.10.3
-
 jobs:
   cypress-run:
-    executor:
-      name: cypress/base-14.17.0
+    docker:
+      - image: circleci/node:16-browsers
     steps:
       - checkout
-      - cypress/install
-      - cypress/run:
-          browser: chrome
-          start: npm start
+      - run: npm install
+      - run: npm run build
+      - run: npx cypress run --headless --browser chrome --config baseUrl=https://www.saucedemo.com
 
 workflows:
-  version: 2.1
-  cypress-workflow:
+  build-and-test:
     jobs:
       - cypress-run
