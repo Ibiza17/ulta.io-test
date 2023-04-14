@@ -134,4 +134,5 @@ This Cypress code will automate the process of logging in to the Sauce Demo webs
 1) To make the test more readable and reusable, consider extracting commonly used test steps into custom commands, e.g., logging in, adding an item to the cart, checking out, etc.
 2) The current test only validates a single product added to the cart, consider adding additional tests for adding multiple products, removing items from the cart, updating the quantity, etc.
 3) The test only covers a happy path scenario. It is important to include negative testing scenarios such as entering invalid login credentials or incorrect information during checkout to ensure the application handles them appropriately.
+
 4)Consider using fixtures for reusable data, such as login credentials and checkout information, to keep the test code clean and easy to read.
