@@ -52,5 +52,6 @@ describe('Sauce Demo', () => {
 
     // Go back to home page after purchase
     cy.get('[data-test="back-to-products"]').click()
+    
   })
 })
