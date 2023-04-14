@@ -1,4 +1,4 @@
-# Manual test cases for 'https://www.saucedemo.com/'
+## Manual test cases for 'https://www.saucedemo.com/'
 
 ### Test Case 1: Verify successful login with valid credentials
 
