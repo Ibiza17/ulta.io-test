@@ -8,8 +8,10 @@ jobs:
       - checkout
       - run: npm install
       - run: npx cypress run --headless --browser chrome --config baseUrl=https://www.saucedemo.com
-
+    
+    
 workflows:
   build-and-test:
     jobs:
       - cypress-run
+
